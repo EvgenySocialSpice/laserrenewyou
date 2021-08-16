@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="header-other">
+    {% include "nav.html" %}
+    <div class="header-other-logo">
+        <img class="logo-img" src="{{ url_for('static', filename='img/spin.png') }}" alt="logo-laser">
+    </div>
+    <div class="header-other-name">
+        <h1>LASER RENEW</h1>
+        <hr>
+        <h2>Renew You</h2>
+    </div>
+    <div class="header-other-name">
+        <p>Tre Donne Estate,<br> Sir Lowry's Pass, <br>Somerset West</p>
+        <p>Cell: 063 885 1122<br> Whatsapp: 063 885 1122 <br>
+        </p>
+    </div>
+</header>
+<main>
+    <h2>Blogs and Tips</h2>
+    <article>
+        <h3>
+            Definitions and Explanations
+        </h3>
+        <h4>
+            RF (Radio Frequency)
+        </h4>
+        <p>
+            <strong>RF lifting</strong> is a safe procedure that lasts up to 6 months (thereafter touch ups are required
+            to be done if necessary). The RF lifting procedure can be done on almost any part of the body, even the head
+            (for baldness solutions).<br>
+            RF lifting can be done on the following parts of the body; Face; lifting of the cheeks, neck and facial skin
+            (this is a non-operational lifting technique option – an alternative to Botox). This treatment noticeably
+            removes wrinkles around the eyes, mouth and nose, decreases a double chin and helps with the overall
+            formation of a tight facial skin. RF lifting encourages the production of collagen and elastin in your skin.
+            The skin’s aging procedure is slowed down which results in less wrinkles appearing over the years. The color
+            of your skin is also improved – it becomes bright and radiant. RF lifting can be done both on women and men
+            after the age of 35.
+        </p>
+    </article>
+    <article>
+        <h4>
+            The Calorie Burner Bed
+        </h4>
+        <p>
+            This is a Thermo-Procedure which operates with an infra-red blanket that has become popular due it’s high
+            rate of effectiveness. This infra-red blanket works by eliminating your body’s liquids.<br>
+            This process will also warm and give relief to painful joints. After each procedure, you can lose up to
+            500ml of liquids, which consist of un-needed toxins.
+            This treatment also rejuvenates your capillaries which improve your bloods’ circulation, fights cellulite
+            and improves your over all look (looking radiant and healthy).<br><br>
+            The infra-red beams shine through your skin with a depth of 4cm – reaching the fat layer below. This
+            treatment can assist the toning of muscles.
+        </p>
+        <p>
+            <strong>Treatment Length:</strong> 10-15 Treatment Sessions
+        </p>
+        <p>
+            <strong>Recommendations before the treatment:</strong>
+            Drink more water to aid the body fluid / toxins removal process.
+        </p>
+        <p>
+            <strong>Contradictions:</strong> The following patients should not consider laser or infra-red
+            treatments;<br><br>
+            Those who have a blood disease.<br>
+            Those who have infections.<br>
+            Viruses.<br>
+            Swellings.<br>
+            Women who are pregnant.<br>
+            Women who are currently breast feeding.<br>
+            Those who have had a recent operation.
+        </p>
+    </article>
+</main>
+{% endblock %}

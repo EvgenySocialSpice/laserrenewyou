@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="header-other">
+    {% include "nav.html" %}
+    <div class="header-other-logo">
+        <img class="logo-img" src="{{ url_for('static', filename='img/spin.png') }}" alt="logo-laser">
+    </div>
+    <div class="header-other-name">
+        <h1>LASER RENEW</h1>
+        <hr>
+        <h2>Renew You</h2>
+    </div>
+    <div class="header-other-name">
+        <p>Tre Donne Estate,<br> Sir Lowry's Pass, <br>Somerset West</p>
+        <p>Cell: 063 885 1122<br> Whatsapp: 063 885 1122 <br>
+        </p>
+    </div>
+</header>
+<main>
+    <div class="capsule">
+        <div class="main-text">
+            <h2>FAQ's</h2>
+            <p>Here are some Frequently Asked Questions about using Laser Treatment as well as our calorie burner
+                bed:</p>
+        </div>
+        <div class="picture">
+            <img src="{{ url_for('static', filename='img/questions.JPG') }}" alt="questions">
+        </div>
+    </div>
+    <hr>
+    <div class="week-hours">
+        <h3>Is laser treatment dangerous?</h3>
+        <div class="week-days">
+            We all have a current method of removing hair, whether it's shaving, plucking or waxing. Waxing, plucking
+            and shaving is quick and not expensive, however these options are only temporary solutions. This is why many
+            people choose to go with the path of laser hair removal. Frequent physical friction given to the skin
+            through shaving and waxing can cause some to experience skin irritations, flaking and sensitivity. Laser
+            treatment treats the skin with a lot more care. Laser therapy uses an intense bean of light to remove hair
+            through a process which is known as photothermolysis. The heat of the laser is absorbed by the hair root
+            causing the follicle to corrupt. This stops future hair growth. The darker your hair, the more light is
+            absorbed, which means - the more effective the hair removal will be. In general, laser hair removal is known
+            not to be as effective for those with white or grey hair as very little light is absorbed. All other
+            treatments work in a similar way. The risks of using laser treatment involve temporary potential damage to
+            the skin that surrounds hair follicles. Common symptoms include skin irritation such as redness, swelling or
+            mild pain. Sometimes the laser can lighten or darken the skin and in very rare instances the laser can cause
+            scarring or blistering. But you really have to be unlucky to experience either of these, and this is why
+            it's also important to choose the laser treatment salon that you trust. If you are concerned about the
+            possibility of skin damage or if you have ever had issues with scarring, tell the technicians so they can
+            adjust the settings on the laser accordingly to minimize the risks.
+        </div>
+
+        <h3>What can laser treatment do?</h3>
+        <div class="week-days">
+            Laser treatments are truly like magicians. With laser treatments you can remove hair semi-permanently (from
+            anywhere and everywhere on the body), remove permanent tattoos, remove wrinkles, tighten the skin,
+            rejuvenate the skin and act as a breast lift assistant.
+        </div>
+
+        <h3>How many sessions do I need to see a result?</h3>
+        <div class="week-days">
+            Because hair is always growing in different stages and skin cells regenerate, multiple laser treatments are
+            often needed. On average, it can take anywhere from four to eight treatments to fully see the result. Some
+            lucky individuals see a result after one session! Although laser hair removal is touted as a permanent
+            option, it is not guaranteed, and you may need occasional touch-up treatments. There are thousands of people
+            all around the world who have made use of laser therapy for various treatments and have been left absolutely
+            happy!
+        </div>
+
+        <h3>Is the treatment painful?</h3>
+        <div class="week-days">
+            The degree of pain that you feel during a treatment will depend on the type of treatment you have chosen and
+            the amount of treatment you undergo. In many cases, the degree of pain that is felt is compared to a rubber
+            band snapping against your skin. During laser treatment, a topical anesthesia is sometimes applied with
+            sedation, especially when treating specific areas of the face. You will be awake yet relaxed, feeling
+            minimal discomfort. Other laser skin procedures can be pain-free for some patients, while others experience
+            varying degrees of light discomfort. Much of this depends on the sensitivity of your skin itself.
+        </div>
+
+        <h3>How often can I have laser treatment sessions?</h3>
+        <div class="week-days">
+            Traditionally, having your treatments 4-6 weeks apart is ideal - this gives the treatment a higher chance of
+            reaching all of the skin cells / hair follicles.
+        </div>
+
+        <h3>Is laser treatment permanent?</h3>
+        <div class="week-days">
+            Our machine removes hair permanently. This means that you might have to return for touch up's every 6-8
+            months (depending on your hair growth, your hair might not even grow back at all). Our bodies are not like
+            machines, they are so delicate - therefore there is no rule-book to how your hair follicles will regenerate
+            (if they even will at all).
+        </div>
+
+    </div>
+</main>
+{% endblock %}

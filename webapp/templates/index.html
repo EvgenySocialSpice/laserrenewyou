@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<header>
+    {% include "nav.html" %}
+</header>
+<div class="sect-one">
+    <div class="logo">
+        <img class="logo-img" src="{{ url_for('static', filename='img/spin.png') }}" alt="logo-laser">
+    </div>
+    <div class="name">
+        <h1>LASER RENEW</h1>
+        <hr>
+        <h2>Renew You</h2>
+        <h3>"Loving yourself is the greatest Revolution"</h3>
+    </div>
+</div> <!--end of sect-one-->
+<div class="subsect">
+    <div class="picture"><img src="{{ url_for('static', filename='img/welcome.jpg') }}" alt="welcome"></div>
+    <div class="text">
+        <p>Hello! Welcome to the Laser Renew website - the first step to achieving your smooth beauty goals!</p>
+        <p>We are a small (great things come in small packages) private salon situated on Sir Lowry's Pass road in
+            Somerset West, run by Tatiana Semenova. We offer a range of laser treatments as well as a calorie burner bed
+            at impressive rates, gentle care, marvelous professionalism and warm company!</p>
+    </div>
+</div> <!--end susect-->
+<div class="sect-two"></div>
+<div class="subsect">
+    <div class="picture"><img src="{{ url_for('static', filename='img/treatment.jpg') }}" alt="treatment"></div>
+    <div class="text">
+        <p>Our machines have been imported from Europe, the latest, finest and most trusted equipment in the beauty
+            industry. So whether you are looking for semi-permanent hair removal solutions, wrinkle removal, tattoo
+            removal, skin tightening, skin rejuvenation or you're looking for a simple way to burn extra calories - you
+            have come to the right place!
+            Booking a session with us is not only going to result in you checking-off an item on your beauty to-do list,
+            but it is a relaxation treat - exactly what one needs during a busy week. Soothing music, scented air with
+            natural oil's and ... peace and quiet. Doesn't that sound like bliss?</p>
+    </div>
+</div>
+<div class="sect-three"></div>
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="header-other">
+    {% include "nav.html" %}
+    <div class="header-other-logo">
+        <img class="logo-img" src="{{ url_for('static', filename='img/spin.png') }}" alt="logo-laser">
+    </div>
+    <div class="header-other-name">
+        <h1>LASER RENEW</h1>
+        <hr>
+        <h2>Renew You</h2>
+    </div>
+    <div class="header-other-name">
+        <p>Tre Donne Estate,<br> Sir Lowry's Pass, <br>Somerset West</p>
+        <p>Cell: 063 885 1122<br> Whatsapp: 063 885 1122 <br>
+        </p>
+    </div>
+</header>
+<main>
+    <div class="capsule">
+        <div class="main-text">
+            <h2>PRICES</h2>
+            <p>We are pretty sure that you won't find better prices anywhere else! If you are unsure about which
+                treatment you would like, we offer consultations free of charge. Consultations include a meeting with
+                the beautician and, if relevant, a test patch done on the skin.</p>
+        </div>
+        <div class="picture">
+            <img src="{{ url_for('static', filename='img/happy-price.jpg') }}" alt="best-prices">
+        </div>
+    </div>
+    <hr>
+    <div class="price-list">
+        *Prices are per session
+        <h3>Skin Tightening / Skin Rejuvination / 30 Minutes</h3>
+        <div class="week-days">
+            <div>Face, Neck and Neckline</div>
+            <div>R450</div>
+        </div>
+        <div class="week-days">
+            <div>Arms</div>
+            <div>R400</div>
+        </div>
+        <div class="week-days">
+            <div>Face</div>
+            <div>R250</div>
+        </div>
+        <div class="week-days">
+            <div>Tummy</div>
+            <div>R400</div>
+        </div>
+        <div class="week-days">
+            <div>Love Handles</div>
+            <div>R450</div>
+        </div>
+        <h3>Pigment Therapy</h3>
+        <div class="week-days">
+            <div>Small Area (A-6)</div>
+            <div>R250</div>
+        </div>
+        <div class="week-days">
+            <div>Medium Area (A-5)</div>
+            <div>R350</div>
+        </div>
+        <div class="week-days">
+            <div>Large Area (A-4)</div>
+            <div>R500</div>
+        </div>
+        <div class="week-days">
+            <div>Any smaller area then (A-6)</div>
+            <div>R200</div>
+        </div>
+        <h3>Calorie Burner Bed</h3>
+        <div class="week-days">
+            <div>30 Min<br> (Up tp 600 Calories burnt in one 30 min session. It helps to burn calories, control weight,
+                improve muscle tone, strength, body shaping, increase energy, immune system enhancement, rejuvenation,
+                stress and fatigue reduction, clears cellulite, control diabetes)
+            </div>
+            <div>R150</div>
+        </div>
+    </div>
+</main>
+{% endblock %}

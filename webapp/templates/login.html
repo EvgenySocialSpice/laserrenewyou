@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<main>
+    <h1>{{ page_title }}</h1>
+    <div class="main-contact-form">
+        <form id="contactform" action="" method="post">
+            {{ form.hidden_tag() }}
+            <div class="input-div">
+                <input name="username" type="text" placeholder="User name" required size="40" maxlength="100"/>
+            </div>
+            <div class="input-div">
+                <input name="password" type="text" placeholder="password" required size="40" maxlength="100"/>
+            </div>
+            <div class="input-div">
+                <button type="submit">login</button>
+            </div>
+        </form>
+    </div>
+</main>
+{% endblock %}

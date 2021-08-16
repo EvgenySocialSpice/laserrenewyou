@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block content %}
+    <header class="header-other">
+        {% include "nav.html" %}
+        <div class="header-other-logo">
+            <img class="logo-img" src="{{ url_for('static', filename='img/spin.png') }}" alt="logo-laser">
+        </div>
+        <div class="header-other-name">
+            <h1>LASER RENEW</h1>
+            <hr>
+            <h2>Renew You</h2>
+        </div>
+        <div class="header-other-name">
+            <p>Tre Donne Estate,<br> Sir Lowry's Pass, <br>Somerset West</p>
+            <p>Cell: 063 885 1122<br> Whatsapp: 063 885 1122 <br>
+            </p>
+        </div>
+    </header>
+    <main>
+        <div class="capsule">
+            <div class="main-text">
+                <h2>CONTACT</h2>
+                <p>Oh, how we love hearing from you! Drop us an e-mail below</p>
+            </div>
+            <div class="picture">
+                <img src="{{ url_for('static', filename='img/contact.jpg') }}" alt="contact">
+            </div>
+        </div>
+        <div class="main-contact-form">
+            <form id="contactform">
+                <div class="input-div">
+                    <input name="name" type="text" placeholder="Name" required size="40" maxlength="100" />
+                </div>
+                <div class="input-div">
+                    <input name="email" type="text" placeholder="Email" required size="40" maxlength="100" />
+                </div>
+                <div class="input-div">
+                    <input name="cell" type="text" placeholder="Phone" required size="40" maxlength="100" />
+                </div>
+                <div class="texarea-div"><textarea name="text" placeholder="Message" required rows="10" cols="42"></textarea></div>
+                <div class="input-div"><button>Send Message</button></div>
+            </form>
+        </div>
+        <hr>
+        <div class="telephone">Tel: +27 63 885 1122<br><br>Whatsapp: +27 63 885 1122</div>
+        <hr>
+        <div class="week-hours">
+            <h3>Operating Hours</h3>
+            <div class="week-days">
+                <div>Monday</div>
+                <div>9am - 5pm</div>
+            </div>
+            <div class="week-days">
+                <div>Tuesday</div>
+                <div>9am - 5pm</div>
+            </div>
+            <div class="week-days">
+                <div>Wednesday</div>
+                <div>9am - 5pm</div>
+            </div>
+            <div class="week-days">
+                <div>Thursday</div>
+                <div>9am - 5pm</div>
+            </div>
+            <div class="week-days">
+                <div>Friday</div>
+                <div>9am - 5pm</div>
+            </div>
+            <div class="week-days">
+                <div>Saturday</div>
+                <div>10am - 1pm</div>
+            </div>
+            <div class="week-days">
+                <div>Sunday </div>
+                <div>Closed</div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
