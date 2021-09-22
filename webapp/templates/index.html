@@ -13,6 +13,15 @@
         <h2>Renew You</h2>
         <h3>"Loving yourself is the greatest Revolution"</h3>
     </div>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <div class="alert-login" role="alert">
+            {% for message in messages %}
+                {{ message }}<br>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endwith %}
 </div> <!--end of sect-one-->
 <div class="subsect">
     <div class="picture"><img src="{{ url_for('static', filename='img/welcome.jpg') }}" alt="welcome"></div>

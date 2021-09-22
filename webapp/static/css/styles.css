@@ -368,13 +368,11 @@ main h2 {
     font-size: 30px;
     color: #2f0e4e;
 }
-
 .main-contact-form {
     width: 100%;
 
 }
-
-#contactform {
+#contact-form {
     padding: 30px 10px;
     font-size: 21px;
     overflow: hidden;
@@ -382,14 +380,24 @@ main h2 {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+.alert-login{
+    display: flex;
+    padding: 10px;
+    position: absolute;
+    top: 3px;
+    z-index: 111;
+    right: 10px;
+    font-size: 18px;
+    color: green;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+}
 .input-div {
     width: 30%;
     min-height: 75px;
     margin: 20px 0 0 0;
 }
-
-.texarea-div {
+.textarea-div {
     width: 100%;
 }
 

@@ -3,13 +3,22 @@
 <main>
     <h1>{{ page_title }}</h1>
     <div class="main-contact-form">
-        <form id="contactform" action="" method="post">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <div class="alert-login" role="alert">
+            {% for message in messages %}
+                {{ message }}<br>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endwith %}
+        <form id="contact-form" action="{{ url_for('process_login') }}" method="post">
             {{ form.hidden_tag() }}
             <div class="input-div">
                 <input name="username" type="text" placeholder="User name" required size="40" maxlength="100"/>
             </div>
             <div class="input-div">
-                <input name="password" type="text" placeholder="password" required size="40" maxlength="100"/>
+                <input name="password" type="password" placeholder="password" required size="40" maxlength="100"/>
             </div>
             <div class="input-div">
                 <button type="submit">login</button>
