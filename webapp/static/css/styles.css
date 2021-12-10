@@ -380,6 +380,20 @@ main h2 {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.form-check-box{
+    border:1px solid;
+    justify-content:center;
+}
+.form-check-tick{
+    width:10%;
+}
+.form-check-label{
+    width:50%;
+    display:flex;
+    white-space:nowrap;
+    justify-content:center;
+    align-items:center;
+}
 .alert-login{
     display: flex;
     padding: 10px;
@@ -393,9 +407,11 @@ main h2 {
     border-color: #ffecb5;
 }
 .input-div {
-    width: 30%;
-    min-height: 75px;
-    margin: 20px 0 0 0;
+    width:24%;
+    display:flex;
+    margin:20px 0 0 0;
+    border:1px solid #64ed92;
+    box-shadow: 2px 7px 11px;
 }
 .textarea-div {
     width: 100%;
@@ -414,16 +430,29 @@ textarea {
     border: none;
 }
 
-button {
-    width: 100%;
-    min-height: 50px;
-    background: #00a18e;
-    color: #fff;
-    font-size: 21px;
-    box-shadow: 5px 5px 20px;
-    cursor: pointer;
+button{
+    width:100%;
+    min-height:50px;
+    background:#00a18e;
+    color:#fff;
+    font-size:21px;
+    cursor:pointer;
+    border:none;
+    transition:all .3s;
 }
-
+button:hover{
+    color:#2f0e4e;
+}
+.last{
+    transition:all .3s;
+}
+.last:hover{
+    box-shadow:none
+}
+.blank{
+    width:100%;
+    min-height: 123px;
+}
 main hr {
     width: 88%;
     color: #CCC;
