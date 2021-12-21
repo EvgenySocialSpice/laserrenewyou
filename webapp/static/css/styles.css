@@ -38,14 +38,16 @@ nav{
     flex-wrap: wrap;
 }
 ul{
-    width: 100%;
     display: flex;
     padding: 0 10px;
     flex-wrap: wrap;
 }
 ul li{
+    display:flex;
+    align-items:center;
     margin: 0 25px;
-    padding: 10px 0;
+    color: #fff;
+    font-size: 18px;
 }
 nav a {
     display: block;
@@ -398,9 +400,9 @@ main h2 {
     display: flex;
     padding: 10px;
     position: absolute;
-    top: 3px;
+    top: 59px;
     z-index: 111;
-    right: 10px;
+    right: 9%;
     font-size: 18px;
     color: green;
     background-color: #fff3cd;

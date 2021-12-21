@@ -17,5 +17,4 @@ def admin_required(func):
             flash('This page available only for admin')
             return redirect(url_for('site.index'))
         return func(*args, **kwargs)
-
     return decorated_view
