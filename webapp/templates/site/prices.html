@@ -1,21 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<header class="header-other">
-    {% include "nav.html" %}
-    <div class="header-other-logo">
-        <img class="logo-img" src="{{ url_for('static', filename='img/spin.png') }}" alt="logo-laser">
-    </div>
-    <div class="header-other-name">
-        <h1>LASER RENEW</h1>
-        <hr>
-        <h2>Renew You</h2>
-    </div>
-    <div class="header-other-name">
-        <p>Tre Donne Estate,<br> Sir Lowry's Pass, <br>Somerset West</p>
-        <p>Cell: 063 885 1122<br> Whatsapp: 063 885 1122 <br>
-        </p>
-    </div>
-</header>
+{% include "header.html" %}
 <main>
     <div class="capsule">
         <div class="main-text">

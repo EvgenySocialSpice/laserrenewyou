@@ -4,15 +4,17 @@
     <div class="blank"></div>
     <h1>{{ page_title }}</h1>
     <div class="main-contact-form">
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        <div class="alert-login" role="alert">
-            {% for message in messages %}
-                {{ message }}<br>
-            {% endfor %}
+        <div class="alert-login">
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                {% for message in messages %}
+                <div class="danger" role="alert">
+                        {{ message }}<br>
+                </div>
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
         </div>
-        {% endif %}
-        {% endwith %}
         <form id="contact-form" action="{{ url_for('user.process_reg') }}" method="post">
             {{ form.hidden_tag() }}
             <div class="input-div">
@@ -28,7 +30,7 @@
                 <input name="password2" type="password2" placeholder="Repeat password" required size="40" maxlength="100"/>
             </div>
             <div class="input-div last">
-                <button type="submit">login</button>
+                <button type="submit">register</button>
             </div>
         </form>
     </div>

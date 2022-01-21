@@ -398,6 +398,7 @@ main h2 {
 }
 .alert-login{
     display: flex;
+    flex-direction:column;
     padding: 10px;
     position: absolute;
     top: 59px;
@@ -407,6 +408,10 @@ main h2 {
     color: green;
     background-color: #fff3cd;
     border-color: #ffecb5;
+}
+.danger{
+    color:red;
+    padding:7px;
 }
 .input-div {
     width:24%;

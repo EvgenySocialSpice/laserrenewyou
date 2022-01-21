@@ -3,3 +3,4 @@ env/
 config.py
 *.db
 __pycache__/
+*.txt
